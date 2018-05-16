@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        [class$="box"] {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7;
+            border-radius: 10%;
+            margin: 16px;
+            padding: 4px;
+            background-color: #e7e7e7;
+        }
+
+        .item {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 4px;
+            background-color: #333;
+            box-shadow: inset 0 3px #111, inset 0 -3px #555;
+        }
+
+        .a-box {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b-box {
+            justify-content: space-between;
+        }
+
+        .b-box .item:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .c-box {
+            justify-content: space-between;
+        }
+
+        .c-box .item:nth-child(2) {
+            align-self: center;
+        }
+
+        .c-box .item:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .d-box {
+            justify-content: space-between;
+        }
+
+        .d-box .item-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .e-box {
+            justify-content: space-between;
+        }
+
+        .e-box .item-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .e-box .item-row:nth-child(2) {
+            justify-content: center;
+        }
+        .f-box {
+            justify-content: space-between;
+        }
+
+        .f-box .item-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 骰子 1点 -->
+    <div class="a-box">
+        <span class="item"></span>
+    </div>
+    <!-- 骰子 2点 -->
+    <div class="b-box">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <!-- 骰子 3点 -->
+    <div class="c-box">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <!-- 骰子 4点 -->
+    <div class="d-box">
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+    <!-- 骰子 5点 -->
+    <div class="e-box">
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="item-row">
+            <span class="item"></span>
+        </div>
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+    <!-- 骰子 6点 -->
+    <div class="f-box">
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="item-row">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
