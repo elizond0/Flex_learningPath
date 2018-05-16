@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid {
+            display: flex;
+        }
+
+        .grid-cell {
+            background-color: #e0dfcc;
+            flex: 1;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .u-1of2{
+            flex: 0 0 50%;
+        }
+        .u-1of3{
+            flex: 0 0 33.3333%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 基本网格布局 -->
+    <div class="grid">
+        <div class="grid-cell">1/2</div>
+        <div class="grid-cell">1/2</div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell">1/3</div>
+        <div class="grid-cell">1/3</div>
+        <div class="grid-cell">1/3</div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell">1/4</div>
+        <div class="grid-cell">1/4</div>
+        <div class="grid-cell">1/4</div>
+        <div class="grid-cell">1/4</div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem deserunt nesciunt quam ad, quidem illo
+            quisquam harum, earum eum modi odit dolores esse et explicabo totam voluptatem cumque. Vel.</div>
+        <div class="grid-cell">1/2</div>
+    </div>
+    <!-- 百分比布局 -->
+    <div class="grid">
+        <div class="grid-cell u-1of2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quisquam saepe ea doloremque corrupti voluptates blanditiis? Similique, animi. Saepe officiis fugit placeat voluptas nihil suscipit ullam, provident reprehenderit eveniet eaque.</div>
+        <div class="grid-cell">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eum explicabo asperiores exercitationem aut ratione laboriosam sint autem nemo ducimus. Libero fugiat doloremque, ab aliquid accusantium saepe tempora eligendi quae.</div>
+        <div class="grid-cell u-1of3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolores assumenda dignissimos aliquam necessitatibus dicta? Ullam quas, nesciunt quidem ea, quis ex assumenda repellat laudantium temporibus dicta sint libero recusandae.</div>
+    </div>
+</body>
+
+</html>
