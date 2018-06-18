@@ -109,3 +109,11 @@
 ## 11.流式布局
 
 * 每行的项目数固定，会自动分行
+
+## 12.水平居中
+
+* 设置justify-content或者align-items为center。另外根据主轴的方向设置flex-direction为row或column。
+
+## 13.自动伸缩
+
+* 给每个flex项目设置flex属性设置需要伸缩的值。
